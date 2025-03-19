@@ -1,7 +1,7 @@
 const {Rectangle} = require("./rectangle");
 
 describe("Rectangles...", () =>{
-    test("Simple area calculations", () => {
+    test("Can calculate area ", () => {
         expect(new Rectangle(1,3).area()).toEqual(3);
         expect(new Rectangle(2,4).area()).toEqual(8);
         expect(new Rectangle(4,3).area()).toEqual(12);
