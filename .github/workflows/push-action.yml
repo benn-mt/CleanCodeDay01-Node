@@ -3,11 +3,11 @@ name: 'Bump Version'
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   bump-version:
-    name: 'Bump Version on master'
+    name: 'Bump Version on main'
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,7 @@ jobs:
         run: cat ./package.json
       - name: 'Automated Version Bump'
         id: version-bump
-        uses: 'phips28/gh-action-bump-version@master'
+        uses: 'phips28/gh-action-bump-version@main'
         with:
           tag-prefix: 'v'
       - name: 'cat package.json'
